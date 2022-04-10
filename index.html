@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="landing Page for Construction Company [ HTML / CSS / SASS / JavaScript ]">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="node_modules/lightgallery.js/dist/css/lightgallery.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+
+    <!-- Header Section Start -->
+    <header>
+        <!-- logo / Brand -->
+        <a href="#" class="brand">
+            We <span>build</span>
+        </a>
+
+        <!-- Navbar Menu -->
+        <nav class="navbar">
+            <a href="#home" data-nav="home">home</a>
+            <a href="#about" data-nav="about">about</a>
+            <a href="#services" data-nav="services">services</a>
+            <a href="#projects" data-nav="projects">projects</a>
+            <a href="#pricing" data-nav="pricing">pricing</a>
+            <a href="#blogs" data-nav="blogs">blogs</a>
+            <a href="#contact" data-nav="contact">contact</a>
+        </nav>
+
+        <!-- Navbar Icons -->
+        <div class="icons">
+            <i id="menu-btn" class="fas fa-bars"></i>
+            <i id="info-btn" class="fas fa-info-circle"></i>
+            <i id="search-btn" class="fas fa-search"></i>
+            <i id="login-btn" class="fas fa-user"></i>
+        </div>
+
+        <!-- Search Form -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search Now...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!-- login Form -->
+        <form action="" class="login-form">
+            <h3>Welcome Back!</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forget password ?</a>
+            </div>
+            <input type="submit" value="Login Now" class="btn">
+            <p>don't have an account?  <a href="#">sign up</a></p>
+        </form>
+    </header>
+
+    <!-- info sidebar -->
+    <div class="contact-info">
+        <div class="fas fa-times" id="close-contact-info"></div>
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <h3>phone number</h3>
+            <p>+123-465-7890</p>
+            <p>+978-495-7550</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <h3>email address</h3>
+            <p>contact@webuild.com</p>
+            <p>info@webuild.com</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>office-address</h3>
+            <p>Toronto - Canada - 465987</p>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+    <!-- Header Section End -->
+    
+
+    <!-- Home section start -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(assets/images/home-slide-1.webp);">
+                    <div class="content">
+                        <h3>we provide best services</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, totam. Lorem ipsum dolor sit amet.</p>
+                        <a href="#about" class="btn">get started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(assets/images/home-slide-2.webp);">
+                    <div class="content">
+                        <h3>Makeing dream comes true</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, totam. Lorem ipsum dolor sit amet.</p>
+                        <a href="#about" class="btn">get started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(assets/images/home-slide-3.webp);">
+                    <div class="content">
+                        <h3>from concept tp creation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, totam. Lorem ipsum dolor sit amet.</p>
+                        <a href="#about" class="btn">get started</a>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- Home section End -->
+
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2 class="heading">
+                about us
+            </h2>
+        </div>
+        
+        <div class="grid">
+            <div class="video">
+                <video src="assets/images/about-vid.mp4" loop muted autoplay></video>
+            </div>
+            <div class="content">
+                <h3> we will provide you the best work you dreamt for!</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus alias ipsam maxime possimus sapiente. Consequuntur numquam suscipit vero voluptatem unde ut earum nemo? Facilis officia ab fugit? Facilis, illum assumenda.</p>
+                <a href="#services" class="btn">our services</a>
+            </div>
+        </div>
+        <div class="numbers">
+            <div class="box">
+                <h3>10+</h3>
+                <p>years of experience</p>
+            </div>
+            <div class="box">
+                <h3>1500+</h3>
+                <p>projects completed</p>
+            </div>
+            <div class="box">
+                <h3>790+</h3>
+                <p>satisfied clients</p>
+            </div>
+            <div class="box">
+                <h3>400+</h3>
+                <p>active Worker</p>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Services Section Start -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>services</h2>
+        </div>
+
+        <div class="services-container">
+            <div class="service">
+                <img src="assets/images/service-1.webp" alt="Services image">
+                <h3>building constructions</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-2.webp" alt="Services image">
+                <h3>house renovation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-3.webp" alt="Services image">
+                <h3>architechture design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-4.webp" alt="Services image">
+                <h3>material supply</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-5.webp" alt="Services image">
+                <h3>consultant</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-6.webp" alt="Services image">
+                <h3>interior design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-7.webp" alt="Services image">
+                <h3>building maintenance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/service-8.webp" alt="Services image">
+                <h3>building report</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- projects Section Start -->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quibusdam.</p>
+        </div>
+        <div class="projects-container">
+            <a href="assets/images/project-1.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-1.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="assets/images/project-2.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-2.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="assets/images/project-3.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-3.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="assets/images/project-4.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-4.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="assets/images/project-5.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-5.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="assets/images/project-6.webp" class="project">
+                <div class="image">
+                    <img src="assets/images/project-6.webp" alt="Project image">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- projects Section End -->
+
+    <!-- Reviews Section Start -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <h2>reviews</h2>
+        </div>
+
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-1.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-2.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-3.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-4.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-5.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat facilis quis, repellat aperiam laudantium.</p>
+                    <div class="user">
+                        <img src="assets/images/pic-5.webp" alt="Reviewer">
+                        <div class="info">
+                            <h4>john Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section End -->
+
+    <!-- pricing section start -->
+    <section class="pricing" id="pricing">
+        <div class="heading">
+            <h2>our pricing</h2>
+        </div>
+
+        <div class="prices-container">
+            <div class="price">
+                <i class="fas fa-home"></i>
+                <h3>basic plan</h3>
+                <div class="price-num"><span>$</span>450<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>
+            <div class="price">
+                <i class="fas fa-building"></i>
+                <h3>premium plan</h3>
+                <div class="price-num"><span>$</span>650<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>
+            <div class="price">
+                <i class="fas fa-city"></i>
+                <h3>ultimate plan</h3>
+                <div class="price-num"><span>$</span>1250<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section End -->
+
+    <!-- Blogs Section Start -->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <h2>Our Blogs</h2>
+        </div>
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-1.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-2.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-3.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-4.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-5.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="assets/images/blog-6.webp" alt="Blog Image">
+                    </div>
+                    <div class="content">
+                        <h3>Blog Title will be here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, possimus.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- Blogs Section Ends -->
+
+    <section class="brands" id="brands">
+        <div class="swiper brands-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-1.webp" alt="client logo">
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-2.webp" alt="client logo">
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-3.webp" alt="client logo">
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-4.webp" alt="client logo">
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-5.webp" alt="client logo">
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="assets/images/client-logo-6.webp" alt="client logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>contact us</h2>
+        </div>
+
+        <div class="contact-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.7859292822227!2d-14.054535915298306!3d28.425715600161574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc47bb74dfcf1b19%3A0xa7ab754250301980!2zMzU2Mzcg2KjZitiq2KfZhtmD2YjYsdmK2KfYjCDZhNin2LMg2KjYp9mE2YXYp9iz2Iwg2KXYs9io2KfZhtmK2Kc!5e0!3m2!1sar!2seg!4v1643398052529!5m2!1sar!2seg"></iframe>
+
+            <form class="contact-form" action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="contact-input">
+                <input type="email" placeholder="email" class="contact-input">
+                <input type="text" placeholder="phone" class="contact-input">
+                <textarea name="" placeholder="message" class="contact-input" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- footer Start -->
+    <footer>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+        <div class="credit"> created by <span>Omar Bayoumi &copy;</span> | all rights reserved! </div>
+
+    </footer>
+    <!-- footer End -->
+
+
+    <!-- LightGallery js -->
+    <script src="node_modules/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <!-- Swiper Js -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- Application Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
