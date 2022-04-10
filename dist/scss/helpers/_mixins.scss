@@ -1,0 +1,34 @@
+// Mixins
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val,1fr));
+    gap: 1rem;
+}
+
+@mixin titleText($titleSize) {
+    font-size: $titleSize;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+@mixin graphText($graphSize) {
+    font-size: $graphSize;
+    color: var(--light-color);
+    line-height: 1.5;
+}
+
+@mixin iconBox() {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    background-color: var(--light-bg);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover{
+        background: var(--black);
+        color:var(--white);
+    }
+}

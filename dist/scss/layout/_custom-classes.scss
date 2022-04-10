@@ -1,0 +1,47 @@
+// Import Variables
+@use "./variables/variables" as *;
+
+// Import Mixins
+@use "./helpers/mixins" as *;
+
+.btn{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding:0.7rem 2rem;
+    background: var(--black);
+    color:var(--white);
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &:hover{
+        background: var(--yellow);
+        color: var(--black);
+    }
+}
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    h2{
+        @include titleText(2rem);
+        padding-left: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-left: 8px solid var(--yellow);
+        border-right: 8px solid var(--yellow);
+        text-transform: capitalize;
+    }
+
+    p{
+        @include graphText(1rem)
+    }
+}
